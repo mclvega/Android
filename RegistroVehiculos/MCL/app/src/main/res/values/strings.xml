@@ -1,0 +1,51 @@
+<resources>
+    <array name="gene">
+        <item>Masculino</item>
+        <item>Femenino</item>
+        <item>Otra Cosa</item>
+    </array>
+    <string name="inicio">Desliza hacia la derecha para ver el menu</string>
+    <string name="addpersonas">Agregar Personas</string>
+    <string name="listpersonas">Listar Personas</string>
+    <string name="salir">Salir</string>
+    <string name="app_name">Prueba MVD</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">mich.vega@alumnos.duoc.cl</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="info_Cliente">Informacion del Cliente</string>
+    <string name="txvrun">Run :</string>
+    <string name="txvnombre">Nombre :</string>
+    <string name="txvdireccion">Dirección :</string>
+    <string name="txvfecha">Fecha de Nacimiento :</string>
+    <string name="txvtelefono">Telefono :</string>
+    <string name="txvgenero">Genero :</string>
+    <string name="tipo_vehiculo">Tipo de Vehiculo</string>
+    <string name="automovil">Automovil</string>
+    <string name="camion">Camion</string>
+    <string name="ingrese_patente">ingrese patente</string>
+    <string name="ingrese_marca">ingrese marca</string>
+    <string name="ingrese_modelo">ingrese modelo</string>
+    <string name="ingrese_anio">ingrese año de fabricación</string>
+    <string name="ingrese_puertas">ingrese cantidad de puertas</string>
+    <string name="ingrese_kilometraje">ingrese kilometraje</string>
+    <string name="ingrese_carga">ingrese cantidad de carga</string>
+    <string name="txvcamarote">¿Tiene Camarote?</string>
+    <string name="registrar">Registrar</string>
+    <string name="ingrese_nombre">ingrese nombre</string>
+    <string name="ingrese_run">ingrese run</string>
+    <string name="ingrese_direccion">ingrese dirección</string>
+    <string name="ingrese_fecha">Seleccione Fecha :</string>
+    <string name="ingrese_telefono">ingrese telefono</string>
+    <string name="txv_selecc_genero">Seleccione Genero :</string>
+    <string name="formulario">Formulario de Registro</string>
+    <string name="seleccionar">Seleccionar</string>
+
+
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
