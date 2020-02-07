@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Este archivo se usa en el proceso de publicación y empaquetado del proyecto web. Para personalizar el comportamiento de este proceso,
+edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 para obtener más información. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAk6a6ANjAWE6sH8pRy+xHggAAAAACAAAAAAAQZgAAAAEAACAAAACV21PCamrgFu9gw6H5h8HcmiwmsdtqFr8HjrgVoiaX0AAAAAAOgAAAAAIAACAAAABs46oRf355k6omGF5IUg1h9ZLXpDthovjj0vjNp0YHEyAAAAAi8mIFWEE/6c7n5oKQAGFrF1UocsqVBMb/GBoVccsFDkAAAABGYZjzMGL2NVIfGuvUdgM/efCOvx3nPX4Bxn6JN/XEpKnADHLo94IbHebk23aOPcZsI5QBM4LXtQg3ihIEYmgK</EncryptedPassword>
+    <_PublishTargetUrl>ftp://librosmcl.somee.com/www.librosmcl.somee.com</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bdd.edmx.diagram">
+      <publishTime>11/27/2019 18:15:49</publishTime>
+    </File>
+    <File Include="bin/Biblioteca.dll">
+      <publishTime>11/30/2019 21:08:18</publishTime>
+    </File>
+    <File Include="bin/Biblioteca.pdb">
+      <publishTime>11/30/2019 21:08:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>06/07/2018 11:03:48</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>06/07/2018 11:03:48</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/09/2019 00:56:44</publishTime>
+    </File>
+    <File Include="servicios.svc">
+      <publishTime>11/27/2019 17:41:13</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/27/2019 18:25:57</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

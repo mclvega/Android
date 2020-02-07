@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">AppUsuario</string>
+
+    //titulos
+
+    <string name="tituloaddlibro">Registro de Libros</string>
+    <string name="tituloaddusu">Registro de Usuarios</string>
+    <string name="titulolibrosdisponibles">Libros Disponibles</string>
+    <string name="titulolistapres">Lista de Prestamos</string>
+    <string name="titulolistalibfav">Libros Favoritos</string>
+    <string name="titulologin">App Usuarios</string>
+
+
+    //lbl
+
+    <string name="lblnombrelibro">Nombre del Libro :</string>
+    <string name="lblstocklibro">Stock del Libro :</string>
+    <string name="lblnombreusuario">Nombre del usuario :</string>
+    <string name="lblrunusuario">Run del usuario :</string>
+    <string name="lblpassusuario">Contraseña :</string>
+    <string name="lblfechaldibro">Fecha Devolución :</string>
+    <string name="lblfechalpibro">Fecha Prestamo :</string>
+    <string name="turut">-Tu run sera usado como tu usuario</string>
+    <string name="sitienes">-Si tienes problemas contacta al administrador</string>
+    <string name="tienes">¿Ya tienes una Cuenta?</string>
+    <string name="usuario">Usuario :</string>
+    <string name="contra">Contraseña :</string>
+
+
+
+    //hint
+    <string name="hintnombrelibro">ingrese nombre del libro</string>
+    <string name="hintstocklibro">ingrese stock del libro</string>
+    <string name="hintnombreusuario">ingrese su nombre </string>
+    <string name="hintsuario">ingrese su usuario </string>
+    <string name="hintrunusuario">Ingrese run (XXXXXXXX-0)</string>
+    <string name="hintpassusuario">ingrese su contraseña</string>
+
+
+    //botones
+    <string name="iniciar">Iniciar Sesion</string>
+    <string name="registrar">Registrar</string>
+    <string name="seleccionar">Seleccionar</string>
+    <string name="actuaalizarstock">Actualizar Stock</string>
+    <string name="cerrar">Cerrar Sesion</string>
+    <string name="ingresac">Ingresar con mi Cuenta</string>
+    <string name="addlib">Agregar Libros</string>
+    <string name="actlis">Actualizar Lista</string>
+    <string name="pres">Prestamos</string>
+    <string name="fav">Libros Favoritos</string>
+    <string name="reser">Reservar</string>
+    <string name="addfav">Añadir a favoritos</string>
+    <string name="eli">Eliminar</string>
+
+</resources>

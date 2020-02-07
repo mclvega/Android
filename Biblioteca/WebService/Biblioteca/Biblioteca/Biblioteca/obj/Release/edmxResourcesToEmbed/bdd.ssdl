@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="librosmclModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="libro">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="stock" Type="nvarchar" MaxLength="4" Nullable="false" />
+    <Property Name="activo" Type="nvarchar" MaxLength="1" Nullable="false" />
+  </EntityType>
+  <EntityType Name="librosfavoritos">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="libro" Type="int" Nullable="false" />
+    <Property Name="usuario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="prestamos">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="usuario" Type="int" Nullable="false" />
+    <Property Name="libro" Type="int" Nullable="false" />
+    <Property Name="fecha_prestamo" Type="date" Nullable="false" />
+    <Property Name="fecha_devolucion" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tipousuario">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="descripcion" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="usuario">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="run" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="nombre" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="user" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="pass" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="activo" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="tipo" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="librosfavoritos_libro_fk">
+    <End Role="libro" Type="Self.libro" Multiplicity="1" />
+    <End Role="librosfavoritos" Type="Self.librosfavoritos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="libro">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="librosfavoritos">
+        <PropertyRef Name="libro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="librosfavoritos_usuario_fk">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="librosfavoritos" Type="Self.librosfavoritos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="librosfavoritos">
+        <PropertyRef Name="usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="prestamos_libro_fk">
+    <End Role="libro" Type="Self.libro" Multiplicity="1" />
+    <End Role="prestamos" Type="Self.prestamos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="libro">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="prestamos">
+        <PropertyRef Name="libro" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="prestamos_usuario_fk">
+    <End Role="usuario" Type="Self.usuario" Multiplicity="1" />
+    <End Role="prestamos" Type="Self.prestamos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="usuario">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="prestamos">
+        <PropertyRef Name="usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="usuario_tipousuario_fk">
+    <End Role="tipousuario" Type="Self.tipousuario" Multiplicity="1" />
+    <End Role="usuario" Type="Self.usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tipousuario">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="usuario">
+        <PropertyRef Name="tipo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="librosmclModelStoreContainer">
+    <EntitySet Name="libro" EntityType="Self.libro" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="librosfavoritos" EntityType="Self.librosfavoritos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="prestamos" EntityType="Self.prestamos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tipousuario" EntityType="Self.tipousuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="usuario" EntityType="Self.usuario" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="librosfavoritos_libro_fk" Association="Self.librosfavoritos_libro_fk">
+      <End Role="libro" EntitySet="libro" />
+      <End Role="librosfavoritos" EntitySet="librosfavoritos" />
+    </AssociationSet>
+    <AssociationSet Name="librosfavoritos_usuario_fk" Association="Self.librosfavoritos_usuario_fk">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="librosfavoritos" EntitySet="librosfavoritos" />
+    </AssociationSet>
+    <AssociationSet Name="prestamos_libro_fk" Association="Self.prestamos_libro_fk">
+      <End Role="libro" EntitySet="libro" />
+      <End Role="prestamos" EntitySet="prestamos" />
+    </AssociationSet>
+    <AssociationSet Name="prestamos_usuario_fk" Association="Self.prestamos_usuario_fk">
+      <End Role="usuario" EntitySet="usuario" />
+      <End Role="prestamos" EntitySet="prestamos" />
+    </AssociationSet>
+    <AssociationSet Name="usuario_tipousuario_fk" Association="Self.usuario_tipousuario_fk">
+      <End Role="tipousuario" EntitySet="tipousuario" />
+      <End Role="usuario" EntitySet="usuario" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

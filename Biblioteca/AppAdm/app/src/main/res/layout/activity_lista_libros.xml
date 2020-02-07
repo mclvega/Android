@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ListaLibros">
+    <TextView
+        android:text="@string/titulolibrosdisponibles"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"></TextView>
+
+
+    <ListView
+        android:id="@+id/lv_libros"
+        android:layout_width="match_parent"
+        android:layout_height="464dp"
+        android:layout_gravity="center">
+
+    </ListView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_addlib"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="@string/addlib"
+            android:layout_height="wrap_content"></Button>
+
+
+
+        <Button
+            android:id="@+id/btn_upd"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:text="@string/actlis"
+            android:layout_height="wrap_content"></Button>
+
+        <Button
+            android:id="@+id/btn_listaPrest"
+            android:layout_width="wrap_content"
+            android:text="@string/pres"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cerrarSesion"
+        android:layout_gravity="center|bottom"
+        android:layout_width="wrap_content"
+        android:text="@string/cerrar"
+        android:layout_height="wrap_content"></Button>
+
+</LinearLayout>

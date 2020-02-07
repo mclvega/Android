@@ -1,0 +1,14 @@
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\Biblioteca.dll.config
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\Biblioteca.dll
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\Biblioteca.pdb
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\EntityFramework.dll
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\EntityFramework.SqlServer.dll
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\Newtonsoft.Json.dll
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\EntityFramework.xml
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\EntityFramework.SqlServer.xml
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\bin\Newtonsoft.Json.xml
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\obj\Release\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\obj\Release\Biblioteca.csproj.CopyComplete
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\obj\Release\Biblioteca.dll
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\obj\Release\Biblioteca.pdb
+C:\Users\maico\Desktop\Biblioteca\Biblioteca\Biblioteca\obj\Release\Biblioteca.csprojAssemblyReference.cache

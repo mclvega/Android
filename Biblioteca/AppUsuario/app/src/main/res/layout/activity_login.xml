@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/titulologin"
+        android:inputType="text"
+        android:paddingTop="50dp"
+        android:layout_marginBottom="120dp"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/usuario"
+            android:paddingStart="20dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:textSize="18dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/txt_user"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/hintsuario"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+
+        android:layout_width="130dp"
+        android:paddingStart="20dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/contra"
+        android:inputType="text"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintpassusuario"
+        android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/iniciar" />
+
+    <Button
+        android:id="@+id/btn_regis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:text="@string/registrar"/>
+</LinearLayout>

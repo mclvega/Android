@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c968b61430664eaf93d05e8dd6fe4f26" Name="Diagram1">
+        <EntityTypeShape EntityType="librosmclModel.libro" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="librosmclModel.librosfavoritos" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="librosmclModel.prestamos" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="librosmclModel.tipousuario" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="librosmclModel.usuario" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="librosmclModel.librosfavoritos_libro_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="librosmclModel.prestamos_libro_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="librosmclModel.librosfavoritos_usuario_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="librosmclModel.prestamos_usuario_fk" ManuallyRouted="false" />
+        <AssociationConnector Association="librosmclModel.usuario_tipousuario_fk" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
