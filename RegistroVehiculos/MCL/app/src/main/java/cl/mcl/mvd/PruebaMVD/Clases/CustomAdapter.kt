@@ -22,6 +22,9 @@ class CustomAdapter(val miContexto: Context, val miLista: ArrayList<Cliente>)
         return ListaCliente.lista.size
     }
 
+
+
+
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
         holder.binData(ListaCliente.lista[position])
 
