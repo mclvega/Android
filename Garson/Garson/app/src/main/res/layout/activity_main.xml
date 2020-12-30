@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo_item"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_titulo"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/White"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Ordenes finalizadas" />
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sw_lista"
+        android:layout_width="851dp"
+        android:layout_height="489dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="79dp">
+
+        <ListView
+            android:id="@+id/lv_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
