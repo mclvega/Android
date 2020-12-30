@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RestaurantSigloXXI</string>
+
+    <string-array name="metodosPago" >
+        <item>Seleccionar Método de Pago</item>
+        <item>Tarjeta de Debito</item>
+        <item>Tarjeta de Credito</item>
+
+    </string-array>
+</resources>

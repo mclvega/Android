@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:background="@drawable/fondo_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Menu">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="396dp"
+        android:fontFamily="cursive"
+        android:text="Menú"
+        android:textColor="@color/White"
+        android:textSize="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_total"
+        app:layout_constraintEnd_toStartOf="@+id/sw_orden"
+        app:layout_constraintStart_toEndOf="@+id/sw_receta"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <Button
+        android:id="@+id/btn_ordenar"
+        android:layout_width="273dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="21dp"
+        android:fontFamily="cursive"
+        android:text="Ordenar"
+        android:textSize="30dp"
+
+        android:textColor="@color/Dark"
+        android:background="@drawable/btnes2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_orden"
+        app:layout_constraintVertical_bias="1.0"></Button>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sw_receta"
+        android:layout_width="436dp"
+        android:layout_height="376dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483">
+
+        <ListView
+            android:id="@+id/rv_listaRecetas"
+            android:layout_width="460dp"
+            android:layout_height="369dp"></ListView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sw_orden"
+        android:layout_width="322dp"
+        android:layout_height="382dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.762"
+        app:layout_constraintStart_toEndOf="@+id/sw_receta"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ListView
+
+            android:id="@+id/rv_listaOrden"
+            android:layout_width="293dp"
+            android:layout_height="391dp">
+
+
+        </ListView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/lbl_total"
+        android:layout_width="329dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="42dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_ordenar"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_menu"
+        android:layout_width="192dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btnes"
+        android:fontFamily="cursive"
+        android:text="Menú del Dia"
+
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lbl_total"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sw_receta"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_postre"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btnes"
+        android:fontFamily="cursive"
+        android:text="Postres"
+
+        android:textColor="@color/White"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sw_receta"
+        app:layout_constraintEnd_toStartOf="@+id/btn_bebestibles"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_bebestibles"
+        android:layout_width="149dp"
+        android:layout_height="41dp"
+        android:background="@drawable/btnes"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="cursive"
+        android:textColor="@color/White"
+        android:text="Bebestibles"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sw_receta"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

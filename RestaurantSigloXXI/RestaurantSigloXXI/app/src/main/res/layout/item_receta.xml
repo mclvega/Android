@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/fondo_item"
+            android:layout_height="117dp">
+
+            <ImageView
+
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/hamburguesa" />
+
+            <TextView
+                android:id="@+id/lbl_precioReceta"
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="68dp"
+                android:textColor="#fff"
+                android:layout_marginTop="34dp"
+                android:layout_marginEnd="5dp"
+                android:fontFamily="cursive"
+                android:text="textview"
+                android:textSize="25dp"></TextView>
+
+            <TextView
+                android:id="@+id/lbl_nombreReceta"
+                android:layout_width="321dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="69dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:fontFamily="cursive"
+                android:text="textview"
+
+                android:textColor="#fff"
+                android:textSize="25dp"></TextView>
+
+            <Button
+
+
+                android:id="@+id/btn_agregarReceta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+
+                android:padding="12dp"
+                android:background="@drawable/btnes2"
+                android:textColor="@color/Dark"
+                android:text="Añadir"
+                android:textSize="20dp"></Button>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
