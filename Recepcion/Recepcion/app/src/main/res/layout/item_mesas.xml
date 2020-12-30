@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/fondo_item"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/lbl_numero"
+                android:layout_width="482dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="cursive"
+                android:text="textview"
+                android:textColor="@color/White"
+                android:textSize="25dp"></TextView>
+
+            <TextView
+
+                android:id="@+id/lbl_capacidad"
+                android:layout_width="480dp"
+                android:fontFamily="cursive"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="35dp"
+                android:text="textview"
+                android:textColor="@color/White"
+
+                android:textSize="25dp"></TextView>
+
+
+            <Button
+                android:id="@+id/btn_asignar"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/btnes2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="11dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Asignar"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

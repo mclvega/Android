@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/fondo_item"
+    android:layout_height="match_parent"
+    tools:context=".ListaMesas">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_above="@+id/sw_listaD"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="381dp"
+        android:layout_marginBottom="-63dp"
+        android:gravity="center"
+        android:text="Clientes por Mesa : "
+        android:textColor="@color/White"
+        android:fontFamily="cursive"
+        android:textSize="22dp"
+        />
+
+    <EditText
+        android:id="@+id/txt_capacidad"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="141dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textColor="@color/White" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="149dp"
+        android:background="@drawable/btnes2"
+        android:textColor="@color/Dark"
+        android:fontFamily="cursive"
+        android:textSize="20dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="135dp"
+        android:layout_marginEnd="528dp"
+        android:layout_toEndOf="@+id/txt_capacidad"
+        android:text="Buscar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="77dp"
+        android:layout_toEndOf="@+id/textView3"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Ocupadas o Reservadas"
+        android:textColor="@color/White"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="265dp"
+        android:layout_height="51dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="354dp"
+        android:gravity="center"
+        android:text="Lista de Mesas"
+        android:textColor="@color/White"
+        android:fontFamily="cursive"
+        android:textSize="40dp" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sw_listaO"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="28dp"
+        android:layout_toEndOf="@+id/sw_listaD">
+
+        <ListView
+            android:id="@+id/lv_mesasOcupadas"
+            android:layout_width="383dp"
+            android:layout_height="453dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/sw_listaD"
+        android:layout_width="396dp"
+        android:layout_height="359dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="31dp">
+
+        <ListView
+            android:id="@+id/lv_mesasDisponibles"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="82dp"
+        android:gravity="center"
+        android:text="Disponibles"
+        android:textSize="30dp"
+        android:textColor="@color/White"
+        android:fontFamily="cursive"/>
+</RelativeLayout>
